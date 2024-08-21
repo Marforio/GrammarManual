@@ -1,0 +1,3 @@
+To update the book, copy only the html body produced by pandoc (excluding the book title page content) and paste it into index.html
+inside the <main></main> element of the body. leave the rest untouched.
+Do not copy the head, styles etc. produced by pandoc.

@@ -36,27 +36,29 @@ function generateSidebarNavigation() {
     sidebarRight.appendChild(ul);
 }
 
-document.addEventListener('scroll', () => {
-    console.log('Scroll event triggered');
-    const headers = document.querySelectorAll('#content h2, #content h3');
-    console.log('Headers:', headers);
-    let current = null;
+document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('scroll', () => {
+        console.log('Scroll event triggered');
+        const headers = document.querySelectorAll('#content h2, #content h3');
+        console.log('Headers:', headers);
+        let current = null;
 
-    headers.forEach(header => {
-        const rect = header.getBoundingClientRect();
-        if (rect.top <= 50) {
-            current = header;
+        headers.forEach(header => {
+            const rect = header.getBoundingClientRect();
+            if (rect.top <= 50) {
+                current = header;
+            }
+        });
+
+        console.log('Current header:', current);
+
+        if (current) {
+            document.querySelectorAll('.sidebar-right li').forEach(item => item.classList.remove('active'));
+            const activeItem = document.querySelector(`.sidebar-right li[data-target-id="${current.id}"]`);
+            console.log('Active item:', activeItem);
+            if (activeItem) {
+                activeItem.classList.add('active');
+            }
         }
     });
-
-    console.log('Current header:', current);
-
-    if (current) {
-        document.querySelectorAll('.sidebar-right li').forEach(item => item.classList.remove('active'));
-        const activeItem = document.querySelector(`.sidebar-right li[data-target-id="${current.id}"]`);
-        console.log('Active item:', activeItem);
-        if (activeItem) {
-            activeItem.classList.add('active');
-        }
-    }
 });

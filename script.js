@@ -37,7 +37,9 @@ function generateSidebarNavigation() {
 }
 
 document.addEventListener('scroll', () => {
+    console.log('Scroll event triggered');
     const headers = document.querySelectorAll('#content h2, #content h3');
+    console.log('Headers:', headers);
     let current = null;
 
     headers.forEach(header => {
@@ -47,9 +49,12 @@ document.addEventListener('scroll', () => {
         }
     });
 
+    console.log('Current header:', current);
+
     if (current) {
         document.querySelectorAll('.sidebar-right li').forEach(item => item.classList.remove('active'));
         const activeItem = document.querySelector(`.sidebar-right li[data-target-id="${current.id}"]`);
+        console.log('Active item:', activeItem);
         if (activeItem) {
             activeItem.classList.add('active');
         }

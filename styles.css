@@ -84,3 +84,8 @@ body {
 .sidebar-right a:hover {
     text-decoration: underline;
 }
+
+.sidebar-right li.active {
+    font-weight: bold;
+    color: #042c57; 
+}

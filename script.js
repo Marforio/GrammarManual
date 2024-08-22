@@ -1,9 +1,20 @@
 function loadChapter(chapter) {
+    console.log(`Loading chapter: ${chapter}`);
     fetch(chapter)
-        .then(response => response.text())
+        .then(response => {
+            console.log('Fetch response:', response);
+            if (!response.ok) {
+                throw new Error(`Network response was not ok: ${response.statusText}`);
+            }
+            return response.text();
+        })
         .then(data => {
+            console.log('Chapter loaded successfully');
             document.getElementById('content').innerHTML = data;
             generateSidebarNavigation();
+        })
+        .catch(error => {
+            console.error('There was a problem with the fetch operation:', error);
         });
 }
 
@@ -17,14 +28,8 @@ function generateSidebarNavigation() {
 
     headers.forEach(header => {
         const li = document.createElement('li');
-        const a = document.createElement('a');
-        a.href = `#${header.id}`;
-        a.textContent = header.textContent;
-        a.onclick = () => {
-            document.querySelectorAll('.sidebar-right a').forEach(link => link.classList.remove('active'));
-            a.classList.add('active');
-        };
-        li.appendChild(a);
+        li.textContent = header.textContent;
+        li.dataset.targetId = header.id;
         ul.appendChild(li);
     });
 
@@ -43,10 +48,10 @@ document.addEventListener('scroll', () => {
     });
 
     if (current) {
-        document.querySelectorAll('.sidebar-right a').forEach(link => link.classList.remove('active'));
-        const activeLink = document.querySelector(`.sidebar-right a[href="#${current.id}"]`);
-        if (activeLink) {
-            activeLink.classList.add('active');
+        document.querySelectorAll('.sidebar-right li').forEach(item => item.classList.remove('active'));
+        const activeItem = document.querySelector(`.sidebar-right li[data-target-id="${current.id}"]`);
+        if (activeItem) {
+            activeItem.classList.add('active');
         }
     }
 });

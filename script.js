@@ -23,7 +23,7 @@ function generateSidebarNavigation() {
     const sidebarRight = document.getElementById('sidebar-right');
     sidebarRight.innerHTML = '';
 
-    const headers = content.querySelectorAll('h2, h3, h4');
+    const headers = content.querySelectorAll('h2, h3');
     const ul = document.createElement('ul');
     let currentUl = ul;
     let lastLevel = 2;
@@ -56,7 +56,7 @@ function generateSidebarNavigation() {
 document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('scroll', () => {
         console.log('Scroll event triggered');
-        const headers = document.querySelectorAll('#content h2, #content h3, #content h4');
+        const headers = document.querySelectorAll('#content h2, #content h3');
         console.log('Headers:', headers);
         let current = null;
 

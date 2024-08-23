@@ -62,7 +62,7 @@ body {
 }
 
 .sidebar-left li {
-    margin-bottom: 5px;
+    margin-bottom: 2px;
 }
 
 .sidebar-left a {
@@ -115,7 +115,7 @@ body {
 }
 
 .no-left-margin {
-    margin-left: 100 !important;
+    margin-left: 0 !important;
 }
 
 /* Responsive styles */
@@ -136,7 +136,7 @@ body {
     }
 
     .navbar {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
 

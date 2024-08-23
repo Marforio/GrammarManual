@@ -98,7 +98,12 @@ body {
     }
 }
 
-/* Hide dropdown by default */
 .dropdown {
     display: none;
+}
+
+@media (max-width: 768px) {
+    .dropdown {
+        display: block;
+    }
 }

@@ -13,21 +13,16 @@
         <a class="navbar-brand" href="#">
             <img src="images/logo.png" alt="Logo" class="logo">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <!-- Add any additional navbar items here if needed -->
-            </ul>
-            <select class="dropdown form-control mt-2 ml-auto">
+        <div class="navbar-nav ml-auto">
+            <i class="fas fa-bars navbar-icon"></i>
+            <select class="dropdown form-control ml-2">
                 <option value="">Select Chapter</option>
             </select>
         </div>
     </nav>
     <div class="container-fluid">
         <div class="row">
-            <nav class="col-md-2 d-none d-md-block bg-light sidebar sidebar-left">
+            <nav class="col-md-2 bg-light sidebar sidebar-left">
                 <div class="sidebar-sticky">
                     <ul class="nav flex-column">
                         <li class="nav-item"><a class="nav-link" href="#" onclick="loadChapter('chapters/ch1_NounsAndDeterminers.html')">1. Nouns and Determiners</a></li>
@@ -50,7 +45,7 @@
                     <!-- Chapter content is loaded here -->
                 </div>
             </main>
-            <nav class="col-md-2 d-none d-md-block bg-light sidebar sidebar-right">
+            <nav class="col-md-2 bg-light sidebar sidebar-right">
                 <div class="sidebar-sticky" id="sidebar-right">
                     <!-- Navigation for h2 and h3 sections is generated here -->
                 </div>
@@ -61,6 +56,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- FontAwesome for icons -->
     <script src="script.js"></script>
 </body>
 </html>

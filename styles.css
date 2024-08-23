@@ -51,7 +51,7 @@ body {
     padding: 20px;
     overflow-y: auto;
     box-sizing: border-box;
-    margin-left: 0px; /* Adjust based on sidebar width */
+    margin-left: 250px; /* Adjust based on sidebar width */
     margin-right: 220px; /* Adjust based on sidebar width */
     padding-top: 66px;
 }
@@ -115,7 +115,7 @@ body {
 }
 
 .no-left-margin {
-    margin-left: 50 !important;
+    margin-left: 0 !important;
 }
 
 /* Responsive styles */
@@ -149,7 +149,6 @@ body {
     .dropdown {
         margin: 0 auto;
         display: flex;
-        justify-content: center;
-        width: 50%;
+        width: 60%;
     }
 }

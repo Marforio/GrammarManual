@@ -78,4 +78,29 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     });
+
+    // Create dropdown for small screens
+    const navbar = document.querySelector('.navbar');
+    const sidebarLeft = document.querySelector('.sidebar-left ul');
+    const dropdown = document.createElement('select');
+    dropdown.classList.add('dropdown', 'form-control', 'mt-2');
+
+    const defaultOption = document.createElement('option');
+    defaultOption.textContent = 'Select Chapter';
+    dropdown.appendChild(defaultOption);
+
+    sidebarLeft.querySelectorAll('li a').forEach(link => {
+        const option = document.createElement('option');
+        option.textContent = link.textContent;
+        option.value = link.getAttribute('onclick').match(/'([^']+)'/)[1];
+        dropdown.appendChild(option);
+    });
+
+    dropdown.addEventListener('change', (event) => {
+        if (event.target.value) {
+            loadChapter(event.target.value);
+        }
+    });
+
+    navbar.appendChild(dropdown);
 });

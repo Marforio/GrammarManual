@@ -3,39 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book</title>
+    <title>Grammar Book</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="navbar">
-        <img src="images/Warning.png" alt="Logo" class="logo">
-    </div>
-    <div class="container">
-        <div class="sidebar-left">
-            <ul>
-                <li><a href="#" onclick="loadChapter('chapters/ch1_NounsAndDeterminers.html')">1. Nouns and Determiners</a></li>
-                <li><a href="#" onclick="loadChapter('chapters/ch2_AdjectivesAndAdverbs.html')">2. Adjectives and Adverbs</a></li>
-                <li><a href="#" onclick="loadChapter('chapters/ch3_VerbConjugationRules.html')">3. Verb Conjugation</a></li>
-                <li><a href="#" onclick="loadChapter('chapters/ch4_VerbTenses.html')">4. Verb Tenses and Modalities</a></li>
-                <li><a href="#" onclick="loadChapter('chapters/ch5_PastModals.html')">5. Past Modals</a></li>
-                <li><a href="#" onclick="loadChapter('chapters/ch6_LogicalConnectors.html')">6. Logical Connectors</a></li>
-                <li><a href="#" onclick="loadChapter('chapters/ch7_SentenceStructure.html')">7. Sentence Structure</a></li>
-                <li><a href="#" onclick="loadChapter('chapters/ch8_PassiveVoice.html')">8. Passive Voice</a></li>
-                <li><a href="#" onclick="loadChapter('chapters/ch9_Pronouns.html')">9. Pronouns</a></li>
-                <li><a href="#" onclick="loadChapter('chapters/ch10_Prepositions.html')">10. Prepositions</a></li>
-                <li><a href="#" onclick="loadChapter('chapters/ch11_VerbComplements.html')">11. Verb Complements</a></li>
-                <li><a href="#" onclick="loadChapter('chapters/ch12_Possessive_S.html')">12. Possessive 's'</a></li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="images/logo.png" alt="Logo" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <!-- Add any additional navbar items here if needed -->
             </ul>
         </div>
-        <div class="content" id="content">
-            CHAPTERS
-            <!-- Chapter content is loaded here -->
-        </div>
-        <div class="sidebar-right" id="sidebar-right">
-            On this page:
-            <!-- Navigation for h2 and h3 sections is generated here -->
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a class="nav-link" href="#" onclick="loadChapter('chapters/ch1_NounsAndDeterminers.html')">1. Nouns and Determiners</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" onclick="loadChapter('chapters/ch2_AdjectivesAndAdverbs.html')">2. Adjectives and Adverbs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" onclick="loadChapter('chapters/ch3_VerbConjugationRules.html')">3. Verb Conjugation</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" onclick="loadChapter('chapters/ch4_VerbTenses.html')">4. Verb Tenses and Modalities</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" onclick="loadChapter('chapters/ch5_PastModals.html')">5. Past Modals</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" onclick="loadChapter('chapters/ch6_LogicalConnectors.html')">6. Logical Connectors</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" onclick="loadChapter('chapters/ch7_SentenceStructure.html')">7. Sentence Structure</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" onclick="loadChapter('chapters/ch8_PassiveVoice.html')">8. Passive Voice</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" onclick="loadChapter('chapters/ch9_Pronouns.html')">9. Pronouns</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" onclick="loadChapter('chapters/ch10_Prepositions.html')">10. Prepositions</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" onclick="loadChapter('chapters/ch11_VerbComplements.html')">11. Verb Complements</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" onclick="loadChapter('chapters/ch12_Possessive_S.html')">12. Possessive 's'</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <main role="main" class="col-md-8 ml-sm-auto col-lg-9 px-4">
+                <div class="content" id="content">
+                    <!-- Chapter content is loaded here -->
+                </div>
+            </main>
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky" id="sidebar-right">
+                    <!-- Navigation for h2 and h3 sections is generated here -->
+                </div>
+            </nav>
         </div>
     </div>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

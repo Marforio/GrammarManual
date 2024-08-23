@@ -1,32 +1,14 @@
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
     color: #333;
-}
-
-.navbar {
-    width: 100%;
-    height: 50px;
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
-    box-sizing: border-box;
 }
 
 .logo {
     height: 40px;
 }
 
-.container {
-    display: flex;
-    height: calc(100vh - 50px);
-}
-
 .sidebar-left, .sidebar-right {
-    width: 200px;
     background-color: #fff;
     border-right: 1px solid #ddd;
     overflow-y: auto;
@@ -39,7 +21,6 @@ body {
 }
 
 .content {
-    flex: 1;
     padding: 20px;
     overflow-y: auto;
     box-sizing: border-box;
@@ -85,25 +66,25 @@ body {
 
 /* Optional: Different bullet points for nested lists */
 .sidebar-right ul ul {
-    list-style: disc;
+    font-size: 0.9em;
 }
 
 .sidebar-right ul ul ul {
-    list-style: circle;
+    font-size: 0.8em;
 }
 
 .sidebar-right ul ul ul ul {
-    list-style: square;
+    font-size: 0.7em;
 }
 
 /* Responsive styles */
-@media (max-width: 66.66%) {
+@media (max-width: 992px) {
     .sidebar-right {
         display: none;
     }
 }
 
-@media (max-width: 50%) {
+@media (max-width: 768px) {
     .sidebar-left {
         display: none;
     }

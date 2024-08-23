@@ -16,17 +16,22 @@ body {
     box-sizing: border-box;
 }
 
-.sidebar-left {
+.sidebar-left, .sidebar-right {
     position: fixed;
     top: 0;
     bottom: 0;
-    left: 0;
-    width: 200px;
     z-index: 1000;
     padding-top: 56px; /* Adjust based on navbar height */
 }
 
+.sidebar-left {
+    left: 0;
+    width: 200px;
+}
+
 .sidebar-right {
+    right: 0;
+    width: 200px;
     border-left: 1px solid #ddd;
 }
 
@@ -35,34 +40,25 @@ body {
     overflow-y: auto;
     box-sizing: border-box;
     margin-left: 220px; /* Adjust based on sidebar width */
+    margin-right: 220px; /* Adjust based on sidebar width */
 }
 
-.sidebar-left ul {
+.sidebar-left ul, .sidebar-right ul {
     list-style: none;
     padding: 0;
 }
 
-.sidebar-left li {
+.sidebar-left li, .sidebar-right li {
     margin-bottom: 10px;
 }
 
-.sidebar-left a {
+.sidebar-left a, .sidebar-right a {
     text-decoration: none;
     color: #333;
 }
 
-.sidebar-left a:hover {
+.sidebar-left a:hover, .sidebar-right a:hover {
     text-decoration: underline;
-}
-
-.sidebar-right ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.sidebar-right li {
-    margin-bottom: 5px;
 }
 
 .sidebar-right li.active {

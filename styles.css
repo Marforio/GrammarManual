@@ -31,11 +31,9 @@ body {
     top: 0;
     bottom: 0;
     left: 0;
-    width: 200px;
+    width: 250px;
     z-index: 1000;
     padding-top: 56px; /* Adjust based on navbar height */
-    font-size: 0.8em;
-    color: cornflowerblue;
 }
 
 .sidebar-right {
@@ -55,6 +53,7 @@ body {
     box-sizing: border-box;
     margin-left: 220px; /* Adjust based on sidebar width */
     margin-right: 220px; /* Adjust based on sidebar width */
+    padding-top: 56px;
 }
 
 .sidebar-left ul {
@@ -63,12 +62,13 @@ body {
 }
 
 .sidebar-left li {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .sidebar-left a {
     text-decoration: none;
-    color: #333;
+    color: #170388;
+    font-size: 0.9em;
 }
 
 .sidebar-left a:hover {
@@ -130,13 +130,4 @@ body {
     .navbar {
         flex-direction: column;
     }
-
-    .dropdown {
-        display: block;
-    }
-}
-
-/* Hide dropdown by default */
-.dropdown {
-    display: none;
 }

@@ -20,7 +20,7 @@ function loadChapter(chapter) {
 
 function generateSidebarNavigation() {
     const content = document.getElementById('content');
-    const sidebarRight = document.querySelector('.sidebar-right');
+    const sidebarRight = document.getElementById('sidebar-right');
     sidebarRight.innerHTML = '';
 
     const headers = content.querySelectorAll('h2, h3, h4, h5');
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Create dropdown for small screens
     const navbar = document.querySelector('.navbar');
     const sidebarLeft = document.querySelector('.sidebar-left ul');
-    const dropdown = document.querySelector('.dropdown select');
+    const dropdown = document.querySelector('.dropdown');
 
     sidebarLeft.querySelectorAll('li a').forEach(link => {
         const option = document.createElement('option');

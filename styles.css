@@ -114,6 +114,10 @@ body {
     cursor: pointer;
 }
 
+.no-left-margin {
+    margin-left: 100 !important;
+}
+
 /* Responsive styles */
 @media (max-width: 920px) {
     .sidebar-right {
@@ -139,7 +143,7 @@ body {
     .content {
         margin-left: 20px; 
         margin-right: 20px;
-        padding-top: 80px;
+        padding-top: 110px;
     }
 
     .dropdown {

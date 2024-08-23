@@ -8,6 +8,16 @@ body {
     height: 40px;
 }
 
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1100; /* Higher than sidebars */
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
 .sidebar-left, .sidebar-right {
     background-color: #fff;
     border-right: 1px solid #ddd;
@@ -43,8 +53,8 @@ body {
     padding: 20px;
     overflow-y: auto;
     box-sizing: border-box;
-    margin-left: 20px; /* Adjust based on sidebar width */
-    margin-right: 20px; /* Adjust based on sidebar width */
+    margin-left: 220px; /* Adjust based on sidebar width */
+    margin-right: 220px; /* Adjust based on sidebar width */
 }
 
 .sidebar-left ul {

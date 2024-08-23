@@ -23,14 +23,31 @@ function generateSidebarNavigation() {
     const sidebarRight = document.getElementById('sidebar-right');
     sidebarRight.innerHTML = '';
 
-    const headers = content.querySelectorAll('h2, h3');
+    const headers = content.querySelectorAll('h2, h3, h4, h5');
     const ul = document.createElement('ul');
+    let currentUl = ul;
+    let lastLevel = 2;
 
     headers.forEach(header => {
+        const level = parseInt(header.tagName.substring(1));
         const li = document.createElement('li');
         li.textContent = header.textContent;
         li.dataset.targetId = header.id;
-        ul.appendChild(li);
+
+        if (level > lastLevel) {
+            const nestedUl = document.createElement('ul');
+            currentUl.lastElementChild.appendChild(nestedUl);
+            currentUl = nestedUl;
+        } else if (level < lastLevel) {
+            let diff = lastLevel - level;
+            while (diff > 0) {
+                currentUl = currentUl.parentElement.parentElement;
+                diff--;
+            }
+        }
+
+        currentUl.appendChild(li);
+        lastLevel = level;
     });
 
     sidebarRight.appendChild(ul);
@@ -39,7 +56,7 @@ function generateSidebarNavigation() {
 document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('scroll', () => {
         console.log('Scroll event triggered');
-        const headers = document.querySelectorAll('#content h2, #content h3');
+        const headers = document.querySelectorAll('#content h2, #content h3, #content h4, #content h5');
         console.log('Headers:', headers);
         let current = null;
 

@@ -17,7 +17,7 @@ body {
 }
 
 .logo {
-    height: 30px;
+    height: 40px;
 }
 
 .container {
@@ -66,26 +66,58 @@ body {
 .sidebar-right ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .sidebar-right li {
     margin-bottom: 5px;
 }
 
-.sidebar-right a {
-    text-decoration: none;
-    color: #333;
-}
-
-.sidebar-right a.active {
-    font-weight: bold;
-}
-
-.sidebar-right a:hover {
-    text-decoration: underline;
-}
-
 .sidebar-right li.active {
     font-weight: bold;
     color: #042c57; 
+}
+
+/* Indentation for nested lists */
+.sidebar-right ul ul {
+    padding-left: 20px; 
+}
+
+/* Optional: Different bullet points for nested lists */
+.sidebar-right ul ul {
+    list-style: disc;
+}
+
+.sidebar-right ul ul ul {
+    list-style: circle;
+}
+
+.sidebar-right ul ul ul ul {
+    list-style: square;
+}
+
+/* Responsive styles */
+@media (max-width: 66.66%) {
+    .sidebar-right {
+        display: none;
+    }
+}
+
+@media (max-width: 50%) {
+    .sidebar-left {
+        display: none;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .dropdown {
+        display: block;
+    }
+}
+
+/* Hide dropdown by default */
+.dropdown {
+    display: none;
 }

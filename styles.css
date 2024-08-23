@@ -24,7 +24,8 @@ body {
     width: 200px;
     z-index: 1000;
     padding-top: 56px; /* Adjust based on navbar height */
-    font-size: 1em;
+    font-size: 0.8em;
+    color: cornflowerblue;
 }
 
 .sidebar-right {
@@ -42,8 +43,8 @@ body {
     padding: 20px;
     overflow-y: auto;
     box-sizing: border-box;
-    margin-left: 160px; /* Adjust based on sidebar width */
-    margin-right: 220px; /* Adjust based on sidebar width */
+    margin-left: 20px; /* Adjust based on sidebar width */
+    margin-right: 20px; /* Adjust based on sidebar width */
 }
 
 .sidebar-left ul {

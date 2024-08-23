@@ -27,11 +27,12 @@ body {
 }
 
 .sidebar-right {
+    position: fixed;
     border-left: 1px solid #ddd;
 }
 
 .content {
-    padding: 20px;
+    padding: 5px;
     overflow-y: auto;
     box-sizing: border-box;
     margin-left: 220px; /* Adjust based on sidebar width */

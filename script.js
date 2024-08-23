@@ -23,7 +23,7 @@ function generateSidebarNavigation() {
     const sidebarRight = document.getElementById('sidebar-right');
     sidebarRight.innerHTML = '';
 
-    const headers = content.querySelectorAll('h2, h3, h4, h5');
+    const headers = content.querySelectorAll('h2, h3, h4');
     const ul = document.createElement('ul');
     let currentUl = ul;
     let lastLevel = 2;
@@ -56,7 +56,7 @@ function generateSidebarNavigation() {
 document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('scroll', () => {
         console.log('Scroll event triggered');
-        const headers = document.querySelectorAll('#content h2, #content h3, #content h4, #content h5');
+        const headers = document.querySelectorAll('#content h2, #content h3, #content h4');
         console.log('Headers:', headers);
         let current = null;
 
@@ -80,17 +80,33 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Create dropdown for small screens
-    const navbar = document.querySelector('.navbar');
-    const sidebarLeft = document.querySelector('.sidebar-left ul');
     const dropdown = document.querySelector('.dropdown');
 
-    sidebarLeft.querySelectorAll('li a').forEach(link => {
+    // List of chapters
+    const chapters = [
+        { text: '1. Nouns and Determiners', value: 'chapters/ch1_NounsAndDeterminers.html' },
+        { text: '2. Adjectives and Adverbs', value: 'chapters/ch2_AdjectivesAndAdverbs.html' },
+        { text: '3. Verb Conjugation', value: 'chapters/ch3_VerbConjugationRules.html' },
+        { text: '4. Verb Tenses and Modalities', value: 'chapters/ch4_VerbTenses.html' },
+        { text: '5. Past Modals', value: 'chapters/ch5_PastModals.html' },
+        { text: '6. Logical Connectors', value: 'chapters/ch6_LogicalConnectors.html' },
+        { text: '7. Sentence Structure', value: 'chapters/ch7_SentenceStructure.html' },
+        { text: '8. Passive Voice', value: 'chapters/ch8_PassiveVoice.html' },
+        { text: '9. Pronouns', value: 'chapters/ch9_Pronouns.html' },
+        { text: '10. Prepositions', value: 'chapters/ch10_Prepositions.html' },
+        { text: '11. Verb Complements', value: 'chapters/ch11_VerbComplements.html' },
+        { text: '12. Possessive \'s\'', value: 'chapters/ch12_Possessive_S.html' }
+    ];
+
+    // Populate the dropdown
+    chapters.forEach(chapter => {
         const option = document.createElement('option');
-        option.textContent = link.textContent;
-        option.value = link.getAttribute('onclick').match(/'([^']+)'/)[1];
+        option.textContent = chapter.text;
+        option.value = chapter.value;
         dropdown.appendChild(option);
     });
 
+    // Add event listener to the dropdown
     dropdown.addEventListener('change', (event) => {
         if (event.target.value) {
             loadChapter(event.target.value);

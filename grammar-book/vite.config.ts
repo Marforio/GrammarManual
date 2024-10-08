@@ -21,7 +21,7 @@ export default defineConfig({
     sourcemap: false,
     assetsInlineLimit: Infinity, // inline all assets
     rollupOptions: {
-      external: ['**/assets/**'],
+      external: ['src/assets/**'],
     },
   }
 })

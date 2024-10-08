@@ -19,6 +19,9 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     sourcemap: false,
-    assetsInlineLimit: 0, // inline all assets
+    assetsInlineLimit: Infinity, // inline all assets
+    rollupOptions: {
+      external: ['**/assets/**'],
+    },
   }
 })

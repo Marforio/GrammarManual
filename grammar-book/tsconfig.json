@@ -22,7 +22,9 @@
     "allowJs": true,
     "noImplicitAny": false,
     "types": ["vite/client"],
-    "noEmit": false // Ensure this is either not set or false
+    "noEmit": false, // Ensure this is either not set or false
+    "declaration": true, // Ensure that .d.ts files are emitted
+    "declarationDir": "./types" // Optionally, you can specify a directory for .d.ts files
   },
   "include": ["src/**/*.ts", "src/**/*.vue"],
   "exclude": ["node_modules"]

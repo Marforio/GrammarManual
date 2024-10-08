@@ -25,7 +25,7 @@ data-reference-type="ref"
 data-reference="fig:aux-prin-combinations">1.1</a> shows the possible
 combinations.</p>
 <figure id="fig:aux-prin-combinations">
-<img src="/assets/images/tenses_modalities.png" />
+<img src="/images/tenses_modalities.png" />
 <figcaption>Combinations of auxiliary and principal verbs</figcaption>
 </figure>
 <p>as you can see, combinging will with infinitive gives us the future
@@ -52,7 +52,7 @@ of the verb.</p>
 <p>Modalities give information about the degree of force in the social
 interaction between the speaker and the audience.</p>
 <figure id="fig:modality-spectrum">
-<img src="/assets/images/modality_spectrum.png" />
+<img src="/images/modality_spectrum.png" />
 <figcaption>Modality spectrum</figcaption>
 </figure>
 <h4 id="overview-of-modal-verbs">Overview of modal verbs</h4>
@@ -63,7 +63,7 @@ is no force on the interlocutor, we have conditionality.</p>
 data-reference="fig:aux-modalities">1.3</a> shows the auxiliaries that
 create modalities</p>
 <figure id="fig:aux-modalities">
-<img src="/assets/images/modalities.png" />
+<img src="/images/modalities.png" />
 <figcaption>Auxiliary verbs per modality</figcaption>
 </figure>
 <h5 id="must">MUST</h5>
@@ -152,7 +152,7 @@ instance, by choosing the type of principal verb, you can create a
 future tense in which the action is in a finished state, and one in
 which the action is ongoing.</p>
 <figure>
-<img src="/assets/images/done_doing.png" />
+<img src="/images/done_doing.png" />
 </figure>
 <p>Many modalities and tenses use the infinitive form of the verb. These
 verb forms refer to thhe pure meaning of the action, without giving

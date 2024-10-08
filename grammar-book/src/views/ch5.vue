@@ -13,7 +13,7 @@ participle</span></p>
 data-reference="fig:past-modals-should">1.1</a> demonstrates how to
 create the past form of should and could.</p>
 <figure id="fig:past-modals-should">
-<img src="/assets/images/past_modals_should.png" />
+<img src="/images/past_modals_should.png" />
 <figcaption>Past form of should and could</figcaption>
 </figure>
 <p>In negative sentences, the negative particle <span

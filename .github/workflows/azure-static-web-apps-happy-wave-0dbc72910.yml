@@ -29,7 +29,7 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_HAPPY_WAVE_0DBC72910 }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
-          app_location: "dist" # Location of the pre-built app
+          app_location: "grammar-book/dist" # Location of the pre-built app
           api_location: ""     # No API source code in this case
           output_location: "/" # This can be omitted if app_location and output_location are the same
 

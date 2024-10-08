@@ -6,9 +6,6 @@
     },
     {
       "path": "./tsconfig.app.json"
-    },
-    {
-      "path": "./tsconfig.vitest.json"
     }
   ],
   "compilerOptions": {
@@ -18,7 +15,8 @@
     "strict": true,
     "jsx": "preserve",
     "esModuleInterop": true,
-    "skipLibCheck": true,
+    "skipLibCheck": true, // Speeds up type checking
+    "isolatedModules": true, // Simplifies compilation
     "allowJs": true,
     "noImplicitAny": false,
     "types": ["vite/client"],

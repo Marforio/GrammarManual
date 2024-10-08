@@ -7,7 +7,7 @@ can be referenced as <em>she</em> and an object can be referred to as
 the subject of the sentence or an object, or whether it replaces a
 possessive phrase.</p>
 <figure id="fig:pronouns">
-<img src="../images/pronouns.png" />
+<img src="~/images/pronouns.png" />
 <figcaption>The English pronouns</figcaption>
 </figure>
 <h2 id="table-of-pronouns">Table of pronouns</h2>

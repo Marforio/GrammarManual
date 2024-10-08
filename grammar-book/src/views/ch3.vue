@@ -12,7 +12,7 @@ verb. These are illustrated in figure <a
 href="#fig:dimensions-of-conjugation" data-reference-type="ref"
 data-reference="fig:dimensions-of-conjugation">1.1</a>.</p>
 <figure id="fig:dimensions-of-conjugation">
-<img src="../images/verb_conjugation.png" style="width:80.0%" />
+<img src="~/images/verb_conjugation.png" style="width:80.0%" />
 <figcaption>The two dimensions of verb conjugation</figcaption>
 </figure>
 <p>A verb conjugation is affected on the one hand by the person and
@@ -42,7 +42,7 @@ next section. It is important to realize that there is a limited number
 of auxiliary verbs. Auxiliary verbs are a closed category, which means
 you cannot simple create a new one.</p>
 <figure id="fig:auxiliaries">
-<img src="../images/auxiliaries.png" style="width:60.0%" />
+<img src="~/images/auxiliaries.png" style="width:60.0%" />
 <figcaption>he auxiliary verbs</figcaption>
 </figure>
 <p>Each of these auxiliary verbs is involved in constructing a verb
@@ -57,7 +57,7 @@ the openness of the category, principal verbs are constrained in terms
 of the forms they can adopt. Every principal verb has four basic
 forms.</p>
 <figure id="fig:principal-verb-forms">
-<img src="../images/principal_verb_forms.png" />
+<img src="~/images/principal_verb_forms.png" />
 <figcaption>Four forms of principal verbs</figcaption>
 </figure>
 <p>These forms are used in combination with specific auxiliary verbs to
@@ -85,7 +85,7 @@ verbs:</p>
 singular conjugation. Sometimes the 1st person singular is also
 marked.</p>
 <figure id="fig:auxiliary-conjugations">
-<img src="../images/auxiliaries_declined.png" style="width:80.0%" />
+<img src="~/images/auxiliaries_declined.png" style="width:80.0%" />
 <figcaption>Basic auxiliary conjugations</figcaption>
 </figure>
 <p>It is one of the most important things you can do is to memorize
@@ -97,7 +97,7 @@ things.</p>
 <p>Many auxiliary verbs, however, display no changes at all according to
 person and number:</p>
 <figure id="fig:unchanging-auxiliaries">
-<img src="../images/auxiliaries_no_change.png" style="width:80.0%" />
+<img src="~/images/auxiliaries_no_change.png" style="width:80.0%" />
 <figcaption>Unchanging auxiliaries</figcaption>
 </figure>
 <p>These auxiliary verbs are called undeclined because they do not
@@ -120,7 +120,7 @@ formation rules applies to almost every English tense or modality, as
 can be seen in the table below.</p>
 <h3 id="standard-pattern">Standard pattern</h3>
 <figure id="fig:standard-conjugation-pattern">
-<img src="../images/pos-neg-ques.png" />
+<img src="~/images/pos-neg-ques.png" />
 <figcaption>Standard conjugation pattern by sentence type</figcaption>
 </figure>
 <p>Exactly one auxiliary verb and one principal verb are needed for most
@@ -134,12 +134,12 @@ one)</p>
 exactly.</p>
 <h3 id="special-patterns">Special patterns</h3>
 <figure id="fig:special-conjugation-pattern-1">
-<img src="../images/special_pattern1.png" />
+<img src="~/images/special_pattern1.png" />
 <figcaption>Special conjugation pattern: present and past
 simple</figcaption>
 </figure>
 <figure id="fig:special-conjugation-pattern-2">
-<img src="../images/special_pattern2.png" />
+<img src="~/images/special_pattern2.png" />
 <figcaption>Special conjugation pattern: the verb ’be’</figcaption>
 </figure>
 <h2 id="pronunciation-of-word-endings">Pronunciation of word endings

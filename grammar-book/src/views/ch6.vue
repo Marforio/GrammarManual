@@ -13,7 +13,7 @@ marked , and those that are followed by a subordinate clause are marked
 sentence modifiers are separated from the rest of the sentence by a
 comma.</p>
 <figure>
-<img src="../images/logical_categories.png" />
+<img src="~/images/logical_categories.png" />
 <figcaption>Categories of logical connectors</figcaption>
 </figure>
 <h4 id="sequence">Sequence</h4>

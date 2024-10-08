@@ -21,7 +21,21 @@ jobs:
           submodules: true
           lfs: false
 
-      # Step 2: Deploy contents of the dist folder
+      # Step 2: Install dependencies
+      - name: Install dependencies
+        run: npm install
+        working-directory: grammar-book/
+
+      # Step 3: Build the app
+      - name: Build the app
+        run: npm run build
+        working-directory: grammar-book/
+
+      # Step 4: List the contents of the 'grammar-book' directory
+      - name: List directory contents
+        run: ls -R grammar-book
+     
+      # Step 5: Deploy to Azure Static Web Apps
       - name: Deploy to Azure Static Web Apps
         id: deploy
         uses: Azure/static-web-apps-deploy@v1
@@ -29,9 +43,9 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_HAPPY_WAVE_0DBC72910 }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
-          app_location: "grammar-book/dist" # Location of the pre-built app
-          api_location: ""     # No API source code in this case
-          output_location: "/" # This can be omitted if app_location and output_location are the same
+          app_location: "grammar-book/dist" # Adjust this if needed after verification
+          api_location: ""     # No API source code
+          output_location: "grammar-book/dist" # Also adjusted to reflect the location of built app
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'

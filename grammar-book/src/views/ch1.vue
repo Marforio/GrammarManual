@@ -332,7 +332,7 @@ figure <a href="#fig:countable-options" data-reference-type="ref"
 data-reference="fig:countable-options">1.1</a> lists some of the the
 countable alternatives to frequently used uncountable nouns.</p>
 <figure id="fig:countable-options">
-<img src="~/images/countable_options.png" style="width:80.0%" />
+<img src="/assets/images/countable_options.png" style="width:80.0%" />
 <figcaption>Countable alternatives for uncountable nouns</figcaption>
 </figure>
 <h2 id="sec:Determiners">Determiners</h2>
@@ -452,7 +452,7 @@ to the speaker. The choice of demonstrative is governed by two factors:
 whether the noun is singular or plural, and whether the object is
 (relatively) near to, or far from, the speaker.</p>
 <figure id="fig:demonstratives">
-<img src="~/images/demonstratives.png" style="width:70.0%" />
+<img src="/assets/images/demonstratives.png" style="width:70.0%" />
 <figcaption>Demonstrative determiners</figcaption>
 </figure>
 <p>Examples:</p>

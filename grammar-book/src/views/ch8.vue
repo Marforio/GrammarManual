@@ -14,7 +14,7 @@ the position of the subject: <em>The sandwich was eaten by me.</em></p>
 active and passive voice, as shown in Figure <a href="#fig:passive"
 data-reference-type="ref" data-reference="fig:passive">1.1</a>.</p>
 <figure id="fig:passive">
-<img src="~/images/passive.png" style="width:80.0%" />
+<img src="/assets/images/passive.png" style="width:80.0%" />
 <figcaption>Passive voice across tenses</figcaption>
 </figure>
 <p>As we see in these examples, the passive voice places the object of

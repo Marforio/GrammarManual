@@ -19,9 +19,5 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     sourcemap: false,
-    rollupOptions: {
-      external: ['images/*'],
-    }
-    //assetsDir: 'assets',
   }
 })

@@ -31,7 +31,7 @@ jobs:
           action: "upload"
           app_location: "dist" # Location of the pre-built app
           api_location: ""     # No API source code in this case
-          output_location: "dist" # This can be omitted if app_location and output_location are the same
+          output_location: "/" # This can be omitted if app_location and output_location are the same
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'

@@ -19,5 +19,6 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     sourcemap: false,
+    assetsInlineLimit: 0, // inline all assets
   }
 })
